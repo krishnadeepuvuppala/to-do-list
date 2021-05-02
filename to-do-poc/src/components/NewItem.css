@@ -1,0 +1,19 @@
+.inptClass {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.rootDiv {
+  margin: 10%;
+  margin-bottom: 5%;
+  background-color: #d871f5;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 45px;
+}
+
+.btnAddItem {
+  margin-left: 15px;
+  border-radius: 6px;
+  padding: 8px;
+}

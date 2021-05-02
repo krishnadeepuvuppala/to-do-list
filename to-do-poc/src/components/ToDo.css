@@ -1,0 +1,22 @@
+.listRootDiv {
+  background-color: #59535c;
+  margin: 25%;
+  margin-top: 0%;
+  border-radius: 8px;
+  padding: 10px;
+  width: 50%;
+}
+
+.itemDiv {
+  width: 90%;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+}
+
+.delBtn {
+  float: right;
+}
