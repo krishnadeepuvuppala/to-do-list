@@ -32,10 +32,23 @@ function App() {
     });
   };
 
+  const updateItemHandler = (data) => {
+    console.log("hi");
+    updateList((prevList) => {
+      prevList.forEach((item) => {
+        if (item.id == data.id) {
+          item.title = data.updateText;
+        }
+      });
+      console.log(prevList);
+      return [...prevList]
+    });
+  };
+
   return (
     <div className="App">
       <NewItem addItem={addItemHandler} />
-      <TodoList todoList={stateList} removeItem={removeItemHandler} />
+      <TodoList todoList={stateList} updateItem={updateItemHandler} removeItem={removeItemHandler} />
     </div>
   );
 }
