@@ -1,5 +1,5 @@
 .listRootDiv {
-  background-color: #59535c;
+  /* background-color: #59535c; */
   margin: 25%;
   margin-top: 0%;
   border-radius: 8px;
@@ -12,11 +12,44 @@
   text-align: left;
   margin: 10px;
   padding: 10px;
-  color: white;
-  background-color: black;
+  /* color: white; */
+  /* background-color: black; */
   border-radius: 8px;
 }
 
 .delBtn {
   float: right;
+}
+
+/*Table structure*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*Pagination*/
+
+.pagination {
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.pagination button {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
 }

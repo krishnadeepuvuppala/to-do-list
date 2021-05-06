@@ -8,14 +8,37 @@ function App() {
     {
       id: 1,
       title: "Buy groceries",
+      desc: "hello"
     },
     {
       id: 2,
       title: "Pay power bill",
+      desc: "hello"
     },
     {
       id: 3,
       title: "Take medication",
+      desc: "hello"
+    },
+    {
+      id: 4,
+      title: "Take medication",
+      desc: "hello"
+    },
+    {
+      id: 5,
+      title: "Take medication",
+      desc: "hello"
+    },
+    {
+      id: 6,
+      title: "Take medication",
+      desc: "hello"
+    },
+    {
+      id: 7,
+      title: "Take medication",
+      desc: "hello"
     },
   ];
 
@@ -33,11 +56,11 @@ function App() {
   };
 
   const updateItemHandler = (data) => {
-    console.log("hi");
     updateList((prevList) => {
       prevList.forEach((item) => {
         if (item.id == data.id) {
           item.title = data.updateText;
+          item.desc = data.desc;
         }
       });
       console.log(prevList);
@@ -47,7 +70,7 @@ function App() {
 
   return (
     <div className="App">
-      <NewItem addItem={addItemHandler} />
+      <NewItem addItem={addItemHandler} tolist={stateList} />
       <TodoList todoList={stateList} updateItem={updateItemHandler} removeItem={removeItemHandler} />
     </div>
   );
